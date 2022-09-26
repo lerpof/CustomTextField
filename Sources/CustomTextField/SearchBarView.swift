@@ -10,6 +10,10 @@ import SwiftUI
 public struct SearchBarView: View {
 	
 	@Binding var text: String
+    
+    public init(with text: Binding<String>) {
+        self._text = text
+    }
 	
 	public var body: some View {
 		VStack {
@@ -34,6 +38,6 @@ public struct SearchBarView: View {
 
 struct SerchBarView_Previews: PreviewProvider {
     static var previews: some View {
-		SearchBarView(text: .constant(""))
+		SearchBarView(with: .constant(""))
     }
 }
