@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct SearchBarView: View {
+public struct SearchBarView: View {
 	
 	@Binding var text: String
 	
-	var body: some View {
+	public var body: some View {
 		VStack {
 			HStack {
 				Image(systemName: "magnifyingglass")

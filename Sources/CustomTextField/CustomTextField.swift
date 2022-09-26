@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CustomTextField: View {
+public struct CustomTextField: View {
 	let imageName: String?
 	let	placeholderText: String
 	
@@ -17,7 +17,7 @@ struct CustomTextField: View {
 	
 	@Binding var text: String
 	
-	init(image: String? = nil,
+	public init(image: String? = nil,
 		 placeholder: String,
 		 text: Binding<String>,
 		 isSecureInput: Bool) {
@@ -29,7 +29,7 @@ struct CustomTextField: View {
 		
 	}
 	
-	var body: some View {
+	public var body: some View {
 		VStack {
 			HStack {
 				if let imageName = imageName {
